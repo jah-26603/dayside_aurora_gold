@@ -1,5 +1,5 @@
 # Dayside Aurora Dataset (GOLD Mission)
-
+<img src="https://github.com/jah-26603/dayside_aurora_gold/blob/main/36b48e9dc798b6a129637a9bdd91230f%20(1).gif?raw=true" alt="Aurora" width="1000">
 This dataset provides reduced measurements of the dayside aurora from the GOLD mission, spanning October 2018 – June 2025.  
 The key scientific result is that the dayside aurora can be extracted pixel-wise with background dayglow removed. This dataset includes raw scans, estimated dayglow, and binary auroral masks to enable direct analysis.
 
@@ -65,8 +65,6 @@ mask = ds.variables['final_auroral_mask'][:]
 aurora = np.clip(aurora, 0, np.inf)
 aurora = aurora * mask
 ```
-
-<img src="https://github.com/jah-26603/dayside_aurora_gold/blob/main/36b48e9dc798b6a129637a9bdd91230f(1).gif?raw=true" alt="Aurora GIF" width="2000">
 
 
 
