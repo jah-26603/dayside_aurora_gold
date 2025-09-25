@@ -1,4 +1,4 @@
-[README.txt](https://github.com/user-attachments/files/22541589/README.txt)
+(https://github.com/user-attachments/files/22541589/README.txt) [README.txt]
 Dayside Aurora Dataset (GOLD Mission)
 
 This dataset provides reduced measurements of the dayside aurora from the GOLD mission, spanning October 2018 – June 2025.
