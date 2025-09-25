@@ -56,7 +56,7 @@ These weights are automatically downloaded when running the code repository. No 
 
 ---
 
-## Usage Example in Python
+## Usage Example of dataset in Python
 
 ```python
 ds = nc.Dataset('2019/001.nc')
@@ -66,8 +66,17 @@ aurora = np.clip(aurora, 0, np.inf)
 aurora = aurora * mask
 ```
 
+## To generate dataset (validation of this study)
+This requires multiple steps:  
+1) To download L1C DAY files -> this code to automatically download from the bash is in the 'download_L1C_files' folder. Edit the bash file for a given year and the output path.  
+2) To download the model weights -> just run the 'download_model_weights.py' file, and the mdoel weights will be retrieved from the dataset repo.
+3) The only thing that needs to be edited, is the config file for pathing, method used, etc. 
 
-
+## To reproduce model weights
+This requires multiple steps:  
+1) To download L1C DAY files -> this code to automatically download from the bash is in the 'download_L1C_files' folder. Edit the bash file for a given year and the output path. The entire missions worth ~10 Tb. 
+2) The only thing that needs to be edited, is pathing.
+3) The two different files refer to the different model tasks trained. Refer to paper for more specifics.
 
 Reference
 
