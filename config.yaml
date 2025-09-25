@@ -1,0 +1,37 @@
+# whether or not you want to save the output predictions
+save_data : False 
+
+# set to false by default, will use the UNet to generate the masks
+classical_method: False 
+
+classical_product_output: "E:\\classical_aurora_products"
+classical_years : [2024,2020]
+
+product_output : "E:\\aurora_products" 
+years : [2024,2019, 2020, 2021, 2022, 2023, 2024, 2025]
+
+#The locations of the GOLD L1C files, the folder structure needs to be: north_day_base/year/day_of_year/
+north_day_base : "E:/gold_l1c_DAY/"
+
+#represents the three main auroral species from the GOLD data documentation, don't need to edit this
+species:
+  LBH:
+    region: [[137.7, 140.1], [140.9, 142.2], [142.5, 143.7], [144.2, 145.4], [146.1, 148.0], [149.9, 152.0], [152.8, 154.0]] 
+
+  '1493':
+    region: [[149,149.8]]
+
+  '1356':
+    region: [[135,137]]
+
+#deep learning configs
+dl_configs:
+  root_dir : r'E:\\south'
+  south_emissions_out : r'E:\\south\\emissions'
+  south_input_out: r'E:\\south\\sza'
+  
+#dict configs for model comparisons against zhang paxton model
+zhang_paxton:
+  year: 2020
+  products_fp : "E:\\classical_aurora_products" # can also be the unet, doesn't matter, only runs one model at a time though
+  
