@@ -166,7 +166,7 @@ def process_loop(species, dirs, aurora_product_fp, species_info_dict, classical_
          
 
         
-    month_data['geographic_latitude'] = ds.variables['GRID_LAT'][:][52:]
+    month_data['geographic_latitude'] = ds.variables['GRID_LON'][:][52:]
     month_data['geographic_longitude'] = ds.variables['GRID_LAT'][:][52:]
     month_data['magnetic_latitude'] = mag_lat    
     month_data['magnetic_longitude'] = mag_lon
@@ -177,3 +177,4 @@ def process_loop(species, dirs, aurora_product_fp, species_info_dict, classical_
     else:
         print('no auroral products created for this month')
         
+
