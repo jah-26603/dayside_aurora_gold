@@ -26,4 +26,5 @@ if response.status_code == 200:
         file.write(response.content)
     print('Regression weights downloaded successfully')
 else:
+
     print('Regression weights failed to download file')
